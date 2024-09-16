@@ -1,0 +1,81 @@
+@font-face {
+    font-family: 'Ziyuanyuan';
+    src: url('fonts/Ziyuanyuan Bold.ttf') format('truetype');
+    font-weight: bold;
+}
+
+@import 'https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css';
+
+body {
+    font-family: 'Ziyuanyuan', sans-serif;
+}
+
+#search-box {
+    box-shadow: 0 0 10px rgba(255, 182, 193, 0.75); /* 粉色外发光效果 */
+    border: 2px solid rgba(255, 182, 193, 0.75); /* 粉色边框 */
+    border-radius: 25px; /* 使边框圆角 */
+    padding: 10px;
+}
+
+#search-box:focus {
+    outline: none; /* 清除默认的聚焦边框 */
+    border-color: rgba(255, 182, 193, 0.75); /* 设置聚焦时的边框颜色 */
+    box-shadow: 0 0 10px rgba(255, 182, 193, 0.75); /* 设置聚焦时的外发光效果 */
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 50;
+}
+
+.modal-content {
+    border-radius: 10px;
+    width: 90%; /* 默认宽度，适用于手机 */
+    max-width: 500px; /* 最大宽度，适用于较大屏幕 */
+    position: relative;
+}
+
+/* 适用于较大屏幕的调整 */
+@media (min-width: 768px) {
+    .modal-content {
+        width: 80%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .modal-content {
+        width: 60%;
+    }
+}
+
+.modal-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 40;
+}
+
+.hidden {
+    display: none;
+}
+
+.btn-close,
+#close-modal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
