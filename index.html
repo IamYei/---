@@ -37,15 +37,6 @@
             border-radius: 10px;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
-        .modal-backdrop {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.5);
-            z-index: 40;
-        }
     </style>
 </head>
 <body class="bg-cover bg-center bg-no-repeat h-screen" style="background-image: url('images/iphone.png');">
@@ -68,26 +59,8 @@
             <!-- 联系人列表将插入在这里 -->
         </main>
     </div>
-
-    <div id="modal" class="modal hidden">
-        <div class="modal-content">
-          
-          <meta name="viewport" content="width=device-width, initial-scale=1.0">
-          <button type="button" class="btn-close" aria-label="Close"></button>
-            <button id="close-modal" class="absolute top-7 right-200">×</button>
-            <h2 class="text-lg font-bold mb-4">求救!!</h2>
-            <p>看到这个弹窗，请停一下！！！ 谢谢你对剪辑查的支持😭 但是目前就我跟小助手两个人 所有的域名 服务器 都需要钱 我们现在是倒贴钱在为爱发电！！ 如果你，可以支持我们一下，助力剪辑查越干越好的话，请扫二维码为我们助力开发！！</p>
-            <img src="https://img.picui.cn/free/2024/07/10/668da5c830a36.jpeg" alt="IMG_9912.jpeg" title="IMG_9912.jpeg" />
-            <label>
-                <input type="checkbox" id="dont-show-today"> 今日不再显示弹窗
-        
-        </label>
-        </div>
     </div>
     </div>
-    <div id="modal-backdrop" class="modal-backdrop hidden"></div>
-    
-
     <script src="script.js"></script>
 </body>
 </html>
